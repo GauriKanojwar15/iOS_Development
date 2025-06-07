@@ -35,6 +35,13 @@ func Swap<T>(val1: inout T, val2: inout T) {
 var a = 11
 var b = 22
 Swap(val1: &a, val2: &b)
+print("after swap",a,b)
+
+var x = "Gauri"
+var y = "Kanojwar"
+print(x,y)
+Swap(val1: &x,val2: &y)
+print("after swap", x,y)
 ```
 
 ---
@@ -53,6 +60,23 @@ struct stack<T> {
 var ob = stack<Int>()
 ob.push(10)
 ob.Display()
+ob.push(10)
+ob.push(20)
+ob.push(30)
+ob.push(40)
+ob.Display()
+ob.pop()
+ob.Display()
+
+var obS = stack<String>()
+obS.Display()
+obS.push("a")
+obS.push("b")
+obS.push("c")
+obS.push("d")
+obS.Display()
+obS.pop()
+obS.Display()
 ```
 
 ---
@@ -71,8 +95,26 @@ class Sample<T> {
 var ob1 = Sample<Int>()
 ob1.push(10)
 ob1.Display()
+ob1.push(10)
+ob1.push(20)
+ob1.push(30)
+ob1.push(40)
+ob1.Display()
+ob1.pop()
+ob1.Display()
+
+var ob2 = Sample<String>()
+ob2.Display()
+ob2.push("a")
+ob2.push("b")
+ob2.push("c")
+ob2.push("d")
+ob2.Display()
+ob2.pop()
+ob2.Display()
+
 ```
 
 ---
 
-All examples are implemented in [Generic.swift](Generic.swift).
+All examples are implemented in [Generic.swift](Programs/Generic.swift).
