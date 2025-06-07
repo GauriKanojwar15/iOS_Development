@@ -37,7 +37,7 @@ class Sample2{
 var ob2 = Sample2(name:"Gauri",id:12)
 print(ob2?.name,ob2?.id)
 
-//covenienced init//class
+//covenienced init//(only use for class)
 class Sample3{
     var name: String
     var id: Int
@@ -54,7 +54,7 @@ print(ob3.name,ob3.id)
 
 
 
-//required init//class
+//required init//(only use for class)
 class Sample3{
     var name: String
     var id: Int

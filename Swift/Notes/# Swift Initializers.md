@@ -60,7 +60,7 @@ print(ob2?.name, ob2?.id)
 
 ---
 
-## 4. Convenience Initializer
+## 4. Convenience Initializer (only for class)
 
 A convenience initializer is a secondary initializer that must call a designated initializer from the same class.
 
@@ -82,7 +82,7 @@ print(ob3.name, ob3.id)
 
 ---
 
-## 5. Required Initializer
+## 5. Required Initializer (only for class)
 
 A required initializer must be implemented by every subclass.
 
