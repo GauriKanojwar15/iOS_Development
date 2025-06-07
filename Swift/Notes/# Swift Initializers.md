@@ -1,6 +1,6 @@
 # Swift Initializers
 
-This document demonstrates different types of initializers in Swift, including examples for each.
+This document demonstrates different types of initializers in Swift, with code examples.
 
 ---
 
@@ -74,6 +74,35 @@ class Sample3 {
     }
     convenience init() {
         self.init(name: "Isha", id: 10)
+    }
+}
+var ob3 = Sample3(name: "Gauri", id: 12)
+print(ob3.name, ob3.id)
+```
+
+---
+
+## 5. Required Initializer
+
+A required initializer must be implemented by every subclass.
+
+```swift
+class Sample3 {
+    var name: String
+    var id: Int
+    required init(name: String, id: Int) {
+        self.name = name
+        self.id = id
+    }
+}
+
+class Sample4: Sample3 {
+    var sname: String
+    var sid: Int
+    required init(name: String, id: Int) {
+        self.sname = name
+        self.sid = id
+        super.init(name: sname, id: sid)
     }
 }
 var ob3 = Sample3(name: "Gauri", id: 12)
