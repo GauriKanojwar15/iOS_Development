@@ -117,4 +117,4 @@ ob2.Display()
 
 ---
 
-All examples are implemented in [Generic.swift](Programs/Generic.swift).
+All examples are implemented in [Generic.swift](https://github.com/GauriKanojwar15/iOS_Development/blob/main/Swift/Programs/Generic.swift).
