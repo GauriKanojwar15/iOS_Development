@@ -41,3 +41,11 @@ for i in words{
     
 }
 print(count)
+
+
+var arrs = [34,5,2,3]
+var res = arrs.sorted()
+print(res)
+print(arrs.first)
+print(arrs.last)
+print(arrs.count-2)
